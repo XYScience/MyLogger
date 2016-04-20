@@ -1,3 +1,3 @@
 # MyLogger
-a simple hyperlink of log\n
+a simple hyperlink of log    
 [![](https://jitpack.io/v/XYScience/MyLogger.svg)](https://jitpack.io/#XYScience/MyLogger)
