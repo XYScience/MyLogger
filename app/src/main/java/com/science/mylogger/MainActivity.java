@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void test() {
-        MyLogger.IS_DEBUG = false; // cancel the log
+        //MyLogger.IS_DEBUG = false; // cancel the log
         MyLogger.e("test method!");
     }
 }
