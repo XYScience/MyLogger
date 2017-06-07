@@ -14,7 +14,7 @@ public class Logger {
     public static boolean IS_DEBUG = true;
     public static String DEFAULT_TAG = ">>>>>";
 
-    public void init(boolean isDebug) {
+    public static void init(boolean isDebug) {
         IS_DEBUG = isDebug;
     }
 
