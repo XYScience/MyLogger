@@ -1,4 +1,4 @@
-package com.science.mylogger;
+package com.sscience.log;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.science.mylogger;
+package com.sscience.myloggertest;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
