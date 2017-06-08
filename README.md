@@ -11,18 +11,10 @@ public void onCreate() {
     Logger.init(BuildConfig.DEBUG);
 }
 ```    
->     如果使用了依赖library方式：
->     主module对library module的依赖都是release依赖，所以library中BuildConfig.DEBUG始终为false，解决如下：
->     library.gradle：
->     android {
->         publishNonDefault true
->     }
->     app.gradle：
->     dependencies {
->         releaseCompile project(path: ':library', configuration: 'release')
->         debugCompile project(path: ':library', configuration: 'debug')
->     }
->     参考：http://www.jianshu.com/p/1907bffef0a3
+> 如果使用了依赖library方式，主module对library module的依赖都是release依赖，所以library中BuildConfig.DEBUG始终为false。    
+> 参考：    
+> http://www.jianshu.com/p/1907bffef0a3；    
+> https://juejin.im/search?query=BuildConfig.DEBUG
 >    
 
 ![image](https://github.com/XYScience/MyLogger/raw/master/screenshots/java_code.png)
