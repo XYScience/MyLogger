@@ -19,7 +19,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    // 主module对library module的依赖都是release依赖，下面是为了解决类似BuildConfig.DEBUG版本问题：
+    // 如果使用了依赖library方式：
+    // 主module对library module的依赖都是release依赖，所以library中BuildConfig.DEBUG始终为true，解决如下：
     // library.gradle：
     // android {
     //     publishNonDefault true
@@ -29,6 +30,7 @@ android {
     //     releaseCompile project(path: ':library', configuration: 'release')
     //     debugCompile project(path: ':library', configuration: 'debug')
     // }
+    // 参考：http://www.jianshu.com/p/1907bffef0a3
 }
 
 dependencies {
