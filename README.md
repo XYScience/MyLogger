@@ -12,7 +12,7 @@ public void onCreate() {
 }
 ```    
 >     如果使用了依赖library方式：
->     主module对library module的依赖都是release依赖，所以library中BuildConfig.DEBUG始终为true，解决如下：
+>     主module对library module的依赖都是release依赖，所以library中BuildConfig.DEBUG始终为false，解决如下：
 >     library.gradle：
 >     android {
 >         publishNonDefault true
